@@ -1,0 +1,36 @@
+{
+  "assignment": "COMP9414 assignment 1, Term 3",
+  "schema_version": 1,
+  "graph_cases": [
+    {
+      "file": "graphs/workshop.json",
+      "source": "staff-authored"
+    },
+    {
+      "file": "graphs/routes.json",
+      "source": "ai9414.search.generator.generate_weighted_graph",
+      "ai9414_version": "0.2.0",
+      "size": "large",
+      "seed": 53,
+      "edge_costs": "Euclidean distances rounded upwards to 0.001"
+    },
+    {
+      "file": "graphs/detour.json",
+      "source": "workshop.json with the ramp-lift edge removed"
+    }
+  ],
+  "planning_cases": [
+    {
+      "file": "planning/service.json",
+      "source": "staff-authored"
+    },
+    {
+      "file": "planning/ready.json",
+      "source": "service.json with the camera already serviced"
+    },
+    {
+      "file": "planning/offline.json",
+      "source": "service.json without reset_tool()"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "offline",
+  "initial": [
+    "bench_free",
+    "needs_service(camera)",
+    "needs_service(sensor)",
+    "on_rack(camera)",
+    "on_rack(sensor)",
+    "tool_ready",
+    "untested(camera)",
+    "untested(sensor)"
+  ],
+  "goal": [
+    "bench_free",
+    "on_rack(camera)",
+    "on_rack(sensor)",
+    "tested(camera)",
+    "tested(sensor)"
+  ],
+  "actions": [
+    {
+      "name": "mount(camera)",
+      "preconditions": [
+        "bench_free",
+        "on_rack(camera)"
+      ],
+      "add": [
+        "on_bench(camera)"
+      ],
+      "delete": [
+        "bench_free",
+        "on_rack(camera)"
+      ]
+    },
+    {
+      "name": "mount(sensor)",
+      "preconditions": [
+        "bench_free",
+        "on_rack(sensor)"
+      ],
+      "add": [
+        "on_bench(sensor)"
+      ],
+      "delete": [
+        "bench_free",
+        "on_rack(sensor)"
+      ]
+    },
+    {
+      "name": "service(camera)",
+      "preconditions": [
+        "needs_service(camera)",
+        "on_bench(camera)",
+        "tool_ready"
+      ],
+      "add": [
+        "serviced(camera)",
+        "tool_used"
+      ],
+      "delete": [
+        "needs_service(camera)",
+        "tool_ready"
+      ]
+    },
+    {
+      "name": "service(sensor)",
+      "preconditions": [
+        "needs_service(sensor)",
+        "on_bench(sensor)",
+        "tool_ready"
+      ],
+      "add": [
+        "serviced(sensor)",
+        "tool_used"
+      ],
+      "delete": [
+        "needs_service(sensor)",
+        "tool_ready"
+      ]
+    },
+    {
+      "name": "store(camera)",
+      "preconditions": [
+        "on_bench(camera)",
+        "tested(camera)"
+      ],
+      "add": [
+        "bench_free",
+        "on_rack(camera)"
+      ],
+      "delete": [
+        "on_bench(camera)"
+      ]
+    },
+    {
+      "name": "store(sensor)",
+      "preconditions": [
+        "on_bench(sensor)",
+        "tested(sensor)"
+      ],
+      "add": [
+        "bench_free",
+        "on_rack(sensor)"
+      ],
+      "delete": [
+        "on_bench(sensor)"
+      ]
+    },
+    {
+      "name": "test(camera)",
+      "preconditions": [
+        "on_bench(camera)",
+        "serviced(camera)",
+        "untested(camera)"
+      ],
+      "add": [
+        "tested(camera)"
+      ],
+      "delete": [
+        "untested(camera)"
+      ]
+    },
+    {
+      "name": "test(sensor)",
+      "preconditions": [
+        "on_bench(sensor)",
+        "serviced(sensor)",
+        "untested(sensor)"
+      ],
+      "add": [
+        "tested(sensor)"
+      ],
+      "delete": [
+        "untested(sensor)"
+      ]
+    }
+  ]
+}

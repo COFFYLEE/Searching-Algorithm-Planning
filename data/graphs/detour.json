@@ -1,0 +1,84 @@
+{
+  "id": "detour",
+  "nodes": [
+    {
+      "id": "aisle",
+      "x": 1,
+      "y": 0
+    },
+    {
+      "id": "depot",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "lift",
+      "x": 3,
+      "y": 2
+    },
+    {
+      "id": "ramp",
+      "x": 1,
+      "y": 2
+    },
+    {
+      "id": "stores",
+      "x": 0,
+      "y": 2
+    },
+    {
+      "id": "test_bay",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "id": "workshop",
+      "x": 3,
+      "y": 0
+    }
+  ],
+  "edges": [
+    {
+      "u": "depot",
+      "v": "aisle",
+      "cost": 2
+    },
+    {
+      "u": "depot",
+      "v": "stores",
+      "cost": 2
+    },
+    {
+      "u": "aisle",
+      "v": "ramp",
+      "cost": 3
+    },
+    {
+      "u": "aisle",
+      "v": "workshop",
+      "cost": 6
+    },
+    {
+      "u": "stores",
+      "v": "ramp",
+      "cost": 1
+    },
+    {
+      "u": "workshop",
+      "v": "lift",
+      "cost": 2
+    },
+    {
+      "u": "workshop",
+      "v": "test_bay",
+      "cost": 3
+    },
+    {
+      "u": "lift",
+      "v": "test_bay",
+      "cost": 4
+    }
+  ],
+  "start": "depot",
+  "goal": "test_bay"
+}

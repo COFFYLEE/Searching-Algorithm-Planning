@@ -1,0 +1,974 @@
+{
+  "graphs": {
+    "workshop": {
+      "dfs": {
+        "status": "found",
+        "path": [
+          "depot",
+          "aisle",
+          "ramp",
+          "lift",
+          "test_bay"
+        ],
+        "cost": 11,
+        "expanded_order": [
+          "depot",
+          "aisle",
+          "ramp",
+          "lift",
+          "test_bay"
+        ],
+        "expanded_count": 5,
+        "generated_count": 11,
+        "frontier_peak": 3
+      },
+      "bfs": {
+        "status": "found",
+        "path": [
+          "depot",
+          "aisle",
+          "workshop",
+          "test_bay"
+        ],
+        "cost": 11,
+        "expanded_order": [
+          "depot",
+          "aisle",
+          "stores",
+          "ramp",
+          "workshop",
+          "lift",
+          "test_bay"
+        ],
+        "expanded_count": 7,
+        "generated_count": 16,
+        "frontier_peak": 3
+      },
+      "ucs": {
+        "status": "found",
+        "path": [
+          "depot",
+          "stores",
+          "ramp",
+          "lift",
+          "test_bay"
+        ],
+        "cost": 9,
+        "expanded_order": [
+          "depot",
+          "aisle",
+          "stores",
+          "ramp",
+          "lift",
+          "workshop",
+          "test_bay"
+        ],
+        "expanded_count": 7,
+        "generated_count": 16,
+        "frontier_peak": 3
+      },
+      "astar": {
+        "status": "found",
+        "path": [
+          "depot",
+          "stores",
+          "ramp",
+          "lift",
+          "test_bay"
+        ],
+        "cost": 9,
+        "expanded_order": [
+          "depot",
+          "aisle",
+          "stores",
+          "ramp",
+          "lift",
+          "test_bay"
+        ],
+        "expanded_count": 6,
+        "generated_count": 13,
+        "frontier_peak": 4
+      }
+    },
+    "routes": {
+      "dfs": {
+        "status": "found",
+        "path": [
+          "S",
+          "H",
+          "J",
+          "L",
+          "G"
+        ],
+        "cost": 1.143,
+        "expanded_order": [
+          "S",
+          "C",
+          "H",
+          "E",
+          "J",
+          "L",
+          "A",
+          "Q",
+          "O",
+          "B",
+          "D",
+          "R",
+          "F",
+          "G"
+        ],
+        "expanded_count": 14,
+        "generated_count": 52,
+        "frontier_peak": 8
+      },
+      "bfs": {
+        "status": "found",
+        "path": [
+          "S",
+          "H",
+          "J",
+          "L",
+          "G"
+        ],
+        "cost": 1.143,
+        "expanded_order": [
+          "S",
+          "C",
+          "H",
+          "I",
+          "M",
+          "E",
+          "J",
+          "K",
+          "R",
+          "F",
+          "L",
+          "B",
+          "Q",
+          "D",
+          "O",
+          "A",
+          "G"
+        ],
+        "expanded_count": 17,
+        "generated_count": 65,
+        "frontier_peak": 7
+      },
+      "ucs": {
+        "status": "found",
+        "path": [
+          "S",
+          "M",
+          "K",
+          "Q",
+          "G"
+        ],
+        "cost": 0.905,
+        "expanded_order": [
+          "S",
+          "C",
+          "I",
+          "M",
+          "H",
+          "K",
+          "R",
+          "F",
+          "E",
+          "B",
+          "D",
+          "O",
+          "J",
+          "N",
+          "Q",
+          "L",
+          "A",
+          "G"
+        ],
+        "expanded_count": 18,
+        "generated_count": 70,
+        "frontier_peak": 6
+      },
+      "astar": {
+        "status": "found",
+        "path": [
+          "S",
+          "M",
+          "K",
+          "Q",
+          "G"
+        ],
+        "cost": 0.905,
+        "expanded_order": [
+          "S",
+          "M",
+          "K",
+          "C",
+          "B",
+          "Q",
+          "G"
+        ],
+        "expanded_count": 7,
+        "generated_count": 27,
+        "frontier_peak": 9
+      }
+    },
+    "detour": {
+      "dfs": {
+        "status": "found",
+        "path": [
+          "depot",
+          "aisle",
+          "workshop",
+          "test_bay"
+        ],
+        "cost": 11,
+        "expanded_order": [
+          "depot",
+          "aisle",
+          "ramp",
+          "workshop",
+          "lift",
+          "test_bay"
+        ],
+        "expanded_count": 6,
+        "generated_count": 12,
+        "frontier_peak": 3
+      },
+      "bfs": {
+        "status": "found",
+        "path": [
+          "depot",
+          "aisle",
+          "workshop",
+          "test_bay"
+        ],
+        "cost": 11,
+        "expanded_order": [
+          "depot",
+          "aisle",
+          "stores",
+          "ramp",
+          "workshop",
+          "lift",
+          "test_bay"
+        ],
+        "expanded_count": 7,
+        "generated_count": 14,
+        "frontier_peak": 3
+      },
+      "ucs": {
+        "status": "found",
+        "path": [
+          "depot",
+          "aisle",
+          "workshop",
+          "test_bay"
+        ],
+        "cost": 11,
+        "expanded_order": [
+          "depot",
+          "aisle",
+          "stores",
+          "ramp",
+          "workshop",
+          "lift",
+          "test_bay"
+        ],
+        "expanded_count": 7,
+        "generated_count": 14,
+        "frontier_peak": 3
+      },
+      "astar": {
+        "status": "found",
+        "path": [
+          "depot",
+          "aisle",
+          "workshop",
+          "test_bay"
+        ],
+        "cost": 11,
+        "expanded_order": [
+          "depot",
+          "aisle",
+          "stores",
+          "ramp",
+          "workshop",
+          "test_bay"
+        ],
+        "expanded_count": 6,
+        "generated_count": 12,
+        "frontier_peak": 3
+      }
+    },
+    "at_goal": {
+      "dfs": {
+        "status": "found",
+        "path": [
+          "depot"
+        ],
+        "cost": 0,
+        "expanded_order": [
+          "depot"
+        ],
+        "expanded_count": 1,
+        "generated_count": 0,
+        "frontier_peak": 1
+      },
+      "bfs": {
+        "status": "found",
+        "path": [
+          "depot"
+        ],
+        "cost": 0,
+        "expanded_order": [
+          "depot"
+        ],
+        "expanded_count": 1,
+        "generated_count": 0,
+        "frontier_peak": 1
+      },
+      "ucs": {
+        "status": "found",
+        "path": [
+          "depot"
+        ],
+        "cost": 0,
+        "expanded_order": [
+          "depot"
+        ],
+        "expanded_count": 1,
+        "generated_count": 0,
+        "frontier_peak": 1
+      },
+      "astar": {
+        "status": "found",
+        "path": [
+          "depot"
+        ],
+        "cost": 0,
+        "expanded_order": [
+          "depot"
+        ],
+        "expanded_count": 1,
+        "generated_count": 0,
+        "frontier_peak": 1
+      }
+    },
+    "isolated_goal": {
+      "dfs": {
+        "status": "not_found",
+        "path": [],
+        "cost": null,
+        "expanded_order": [
+          "depot",
+          "aisle",
+          "ramp",
+          "lift",
+          "workshop",
+          "stores"
+        ],
+        "expanded_count": 6,
+        "generated_count": 14,
+        "frontier_peak": 3
+      },
+      "bfs": {
+        "status": "not_found",
+        "path": [],
+        "cost": null,
+        "expanded_order": [
+          "depot",
+          "aisle",
+          "stores",
+          "ramp",
+          "workshop",
+          "lift"
+        ],
+        "expanded_count": 6,
+        "generated_count": 14,
+        "frontier_peak": 3
+      },
+      "ucs": {
+        "status": "not_found",
+        "path": [],
+        "cost": null,
+        "expanded_order": [
+          "depot",
+          "aisle",
+          "stores",
+          "ramp",
+          "lift",
+          "workshop"
+        ],
+        "expanded_count": 6,
+        "generated_count": 14,
+        "frontier_peak": 3
+      },
+      "astar": {
+        "status": "not_found",
+        "path": [],
+        "cost": null,
+        "expanded_order": [
+          "depot",
+          "aisle",
+          "stores",
+          "ramp",
+          "lift",
+          "workshop"
+        ],
+        "expanded_count": 6,
+        "generated_count": 14,
+        "frontier_peak": 3
+      }
+    },
+    "zero_coordinates": {
+      "astar": {
+        "status": "found",
+        "path": [
+          "S",
+          "M",
+          "K",
+          "Q",
+          "G"
+        ],
+        "cost": 0.905,
+        "expanded_order": [
+          "S",
+          "C",
+          "I",
+          "M",
+          "H",
+          "K",
+          "R",
+          "F",
+          "E",
+          "B",
+          "D",
+          "O",
+          "J",
+          "N",
+          "Q",
+          "L",
+          "A",
+          "G"
+        ],
+        "expanded_count": 18,
+        "generated_count": 70,
+        "frontier_peak": 6
+      }
+    }
+  },
+  "planning": {
+    "service": {
+      "status": "found",
+      "plan": [
+        "mount(camera)",
+        "service(camera)",
+        "test(camera)",
+        "store(camera)",
+        "reset_tool()",
+        "mount(sensor)",
+        "service(sensor)",
+        "test(sensor)",
+        "store(sensor)"
+      ],
+      "cost": 9,
+      "expanded_order": [
+        [
+          "bench_free",
+          "needs_service(camera)",
+          "needs_service(sensor)",
+          "on_rack(camera)",
+          "on_rack(sensor)",
+          "tool_ready",
+          "untested(camera)",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(camera)",
+          "needs_service(sensor)",
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "tool_ready",
+          "untested(camera)",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(camera)",
+          "needs_service(sensor)",
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "tool_ready",
+          "untested(camera)",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(sensor)",
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "tool_used",
+          "untested(camera)",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(camera)",
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(sensor)",
+          "tool_used",
+          "untested(camera)",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(sensor)",
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "tested(camera)",
+          "tool_used",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(camera)",
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(sensor)",
+          "tested(sensor)",
+          "tool_used",
+          "untested(camera)"
+        ],
+        [
+          "bench_free",
+          "needs_service(sensor)",
+          "on_rack(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "tested(camera)",
+          "tool_used",
+          "untested(sensor)"
+        ],
+        [
+          "bench_free",
+          "needs_service(camera)",
+          "on_rack(camera)",
+          "on_rack(sensor)",
+          "serviced(sensor)",
+          "tested(sensor)",
+          "tool_used",
+          "untested(camera)"
+        ],
+        [
+          "needs_service(sensor)",
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(camera)",
+          "tested(camera)",
+          "tool_used",
+          "untested(sensor)"
+        ],
+        [
+          "bench_free",
+          "needs_service(sensor)",
+          "on_rack(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "tested(camera)",
+          "tool_ready",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(camera)",
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "serviced(sensor)",
+          "tested(sensor)",
+          "tool_used",
+          "untested(camera)"
+        ],
+        [
+          "bench_free",
+          "needs_service(camera)",
+          "on_rack(camera)",
+          "on_rack(sensor)",
+          "serviced(sensor)",
+          "tested(sensor)",
+          "tool_ready",
+          "untested(camera)"
+        ],
+        [
+          "needs_service(sensor)",
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "tested(camera)",
+          "tool_ready",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(sensor)",
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(camera)",
+          "tested(camera)",
+          "tool_ready",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(camera)",
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "serviced(sensor)",
+          "tested(sensor)",
+          "tool_ready",
+          "untested(camera)"
+        ],
+        [
+          "needs_service(camera)",
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(sensor)",
+          "tested(sensor)",
+          "tool_ready",
+          "untested(camera)"
+        ],
+        [
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(camera)",
+          "serviced(sensor)",
+          "tested(camera)",
+          "tool_used",
+          "untested(sensor)"
+        ],
+        [
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "serviced(sensor)",
+          "tested(sensor)",
+          "tool_used",
+          "untested(camera)"
+        ],
+        [
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(camera)",
+          "serviced(sensor)",
+          "tested(camera)",
+          "tested(sensor)",
+          "tool_used"
+        ],
+        [
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "serviced(sensor)",
+          "tested(camera)",
+          "tested(sensor)",
+          "tool_used"
+        ],
+        [
+          "bench_free",
+          "on_rack(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "serviced(sensor)",
+          "tested(camera)",
+          "tested(sensor)",
+          "tool_used"
+        ]
+      ],
+      "expanded_count": 22,
+      "generated_count": 26,
+      "frontier_peak": 4
+    },
+    "ready": {
+      "status": "found",
+      "plan": [
+        "mount(camera)",
+        "test(camera)",
+        "store(camera)",
+        "mount(sensor)",
+        "service(sensor)",
+        "test(sensor)",
+        "store(sensor)"
+      ],
+      "cost": 7,
+      "expanded_order": [
+        [
+          "bench_free",
+          "needs_service(sensor)",
+          "on_rack(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "tool_ready",
+          "untested(camera)",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(sensor)",
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "tool_ready",
+          "untested(camera)",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(sensor)",
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(camera)",
+          "tool_ready",
+          "untested(camera)",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(sensor)",
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "tested(camera)",
+          "tool_ready",
+          "untested(sensor)"
+        ],
+        [
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(camera)",
+          "serviced(sensor)",
+          "tool_used",
+          "untested(camera)",
+          "untested(sensor)"
+        ],
+        [
+          "bench_free",
+          "needs_service(sensor)",
+          "on_rack(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "tested(camera)",
+          "tool_ready",
+          "untested(sensor)"
+        ],
+        [
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(camera)",
+          "serviced(sensor)",
+          "tested(sensor)",
+          "tool_used",
+          "untested(camera)"
+        ],
+        [
+          "needs_service(sensor)",
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(camera)",
+          "tested(camera)",
+          "tool_ready",
+          "untested(sensor)"
+        ],
+        [
+          "bench_free",
+          "on_rack(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "serviced(sensor)",
+          "tested(sensor)",
+          "tool_used",
+          "untested(camera)"
+        ],
+        [
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(camera)",
+          "serviced(sensor)",
+          "tested(camera)",
+          "tool_used",
+          "untested(sensor)"
+        ],
+        [
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "serviced(sensor)",
+          "tested(sensor)",
+          "tool_used",
+          "untested(camera)"
+        ],
+        [
+          "bench_free",
+          "on_rack(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "serviced(sensor)",
+          "tested(sensor)",
+          "tool_ready",
+          "untested(camera)"
+        ],
+        [
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(camera)",
+          "serviced(sensor)",
+          "tested(camera)",
+          "tested(sensor)",
+          "tool_used"
+        ],
+        [
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "serviced(sensor)",
+          "tested(camera)",
+          "tested(sensor)",
+          "tool_used"
+        ],
+        [
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "serviced(sensor)",
+          "tested(sensor)",
+          "tool_ready",
+          "untested(camera)"
+        ],
+        [
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(camera)",
+          "serviced(sensor)",
+          "tested(sensor)",
+          "tool_ready",
+          "untested(camera)"
+        ],
+        [
+          "bench_free",
+          "on_rack(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "serviced(sensor)",
+          "tested(camera)",
+          "tested(sensor)",
+          "tool_used"
+        ]
+      ],
+      "expanded_count": 17,
+      "generated_count": 21,
+      "frontier_peak": 4
+    },
+    "offline": {
+      "status": "not_found",
+      "plan": [],
+      "cost": null,
+      "expanded_order": [
+        [
+          "bench_free",
+          "needs_service(camera)",
+          "needs_service(sensor)",
+          "on_rack(camera)",
+          "on_rack(sensor)",
+          "tool_ready",
+          "untested(camera)",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(camera)",
+          "needs_service(sensor)",
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "tool_ready",
+          "untested(camera)",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(camera)",
+          "needs_service(sensor)",
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "tool_ready",
+          "untested(camera)",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(sensor)",
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "tool_used",
+          "untested(camera)",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(camera)",
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(sensor)",
+          "tool_used",
+          "untested(camera)",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(sensor)",
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "tested(camera)",
+          "tool_used",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(camera)",
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(sensor)",
+          "tested(sensor)",
+          "tool_used",
+          "untested(camera)"
+        ],
+        [
+          "bench_free",
+          "needs_service(sensor)",
+          "on_rack(camera)",
+          "on_rack(sensor)",
+          "serviced(camera)",
+          "tested(camera)",
+          "tool_used",
+          "untested(sensor)"
+        ],
+        [
+          "bench_free",
+          "needs_service(camera)",
+          "on_rack(camera)",
+          "on_rack(sensor)",
+          "serviced(sensor)",
+          "tested(sensor)",
+          "tool_used",
+          "untested(camera)"
+        ],
+        [
+          "needs_service(sensor)",
+          "on_bench(sensor)",
+          "on_rack(camera)",
+          "serviced(camera)",
+          "tested(camera)",
+          "tool_used",
+          "untested(sensor)"
+        ],
+        [
+          "needs_service(camera)",
+          "on_bench(camera)",
+          "on_rack(sensor)",
+          "serviced(sensor)",
+          "tested(sensor)",
+          "tool_used",
+          "untested(camera)"
+        ]
+      ],
+      "expanded_count": 11,
+      "generated_count": 12,
+      "frontier_peak": 2
+    }
+  }
+}
